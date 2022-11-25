@@ -1,0 +1,22 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+}
+
+.container-img {
+  background-image: url("../../assets/img/bg.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+  background-position: bottom;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=main.css.map */
