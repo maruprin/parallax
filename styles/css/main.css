@@ -42,9 +42,6 @@ body, html {
   background-image: url("../../assets/img/woman.jpg");
   min-height: 800px;
 }
-.img1--first {
-  top: 60px;
-}
 
 .img2 {
   background-image: url("../../assets/img/flowers.jpg");
