@@ -1,24 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./styles/css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parallax</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Solway:wght@400;500;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header class="header">
         <p class="header__text">
             Wellcome, I' Header
         </p>
-         
+
     </header>
     <main>
-        <div class="container-img">
+        <div id="scrollbar" class="scrollbar"></div>
+        <div id="buttonUp" class="buttonUp"><img class="up" src="./assets/img/arrow-up.png" alt=""></div>
+        <div class="img1 img1--first">
+            <div class="caption caption--first">
+                <span class="border">
+                    Scroll down
+                </span>
+            </div>
         </div>
-        
+        <div class="container1">
+            <h3 class="container1__title">Parallax demo
+            </h3>
+            <p class="container1__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus maiores pariatur
+                sapiente placeat dolorem molestiae vitae. Praesentium maiores necessitatibus quidem voluptates!
+                Dignissimos sequi consequuntur odit nostrum voluptas incidunt iusto enim!</p>
+        </div>
+        <div class="img2">
+            <div class="caption">
+                <span class="border border--styled">Less height</span>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="container2__title">
+                <p class="container2__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus maiores
+                    pariatur sapiente placeat dolorem molestiae vitae. </p>
+            </div>
+        </div>
+        <div class="img3">
+            <div class="caption">
+                <span class="border border--styled">Less height</span>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="container2__title">
+
+                <p class="container2__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.. </p>
+            </div>
+        </div>
+        <div class="img1">
+            <div class="caption">
+                <span class="border">
+                    Bye!
+                </span>
+            </div>
+        </div>
+
     </main>
     <footer></footer>
+    <script src="/js/main.js"></script>
 </body>
+
 </html>

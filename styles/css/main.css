@@ -1,22 +1,138 @@
-body {
+body, html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "solway";
+  height: 100%;
+  background-color: var(--color-violet);
 }
 
 .header {
   width: 100%;
   height: 60px;
+  position: fixed;
+  z-index: 120;
+  background-color: var(--color-violet);
+  padding: 0 20px;
+  font-size: 20px;
+  color: var(--color-white);
+  top: 0;
 }
 
-.container-img {
-  background-image: url("../../assets/img/bg.jpg");
+.scrollbar {
+  width: 0;
+  height: 10px;
+  background: var(--gradient-bar);
+  position: fixed;
+  z-index: 100;
+  top: 60px;
+  left: 0px;
+}
+
+.img1, .img2, .img3 {
+  position: relative;
+  background-attachment: fixed;
+  opacity: 0.7;
+  background-position: center;
   background-repeat: no-repeat;
-  object-fit: cover;
-  width: 100%;
-  height: 400px;
-  background-position: bottom;
   background-size: cover;
 }
 
-/*# sourceMappingURL=main.css.map */
+.img1 {
+  background-image: url("../../assets/img/woman.jpg");
+  min-height: 800px;
+}
+.img1--first {
+  top: 60px;
+}
+
+.img2 {
+  background-image: url("../../assets/img/flowers.jpg");
+  min-height: 400px;
+}
+
+.img3 {
+  background-image: url("../../assets/img/baby-rabbit.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.caption span.border {
+  background-color: var(--color-violet);
+  color: var(--color-green);
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+.caption span.border--styled {
+  background-color: transparent;
+  font-size: 25px;
+  color: var(--color-violet);
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.container1 {
+  color: var(--color-white);
+  background-color: var(--color-violet);
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
+}
+.container1__title {
+  text-align: center;
+}
+
+.container2 {
+  position: relative;
+}
+.container2__title {
+  color: var(--color-green);
+  background-color: var(--color-violet);
+  padding: 50px 80px;
+  text-align: justify;
+}
+
+.buttonUp {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--color-white);
+  z-index: 1;
+  text-align: center;
+  cursor: pointer;
+}
+.buttonUp:hover {
+  background-color: var(--color-green);
+}
+
+.up {
+  width: 100%;
+  opacity: 0.3;
+}
+.up:hover {
+  opacity: 0.5;
+}
+
+* {
+  --color-violet: rgb(112, 31, 187);
+  --color-white: white;
+  --color-green: #0de7a6;
+  --gradient-bar: linear-gradient(90deg, rgb(247, 131, 241) 30%, #0de7a6,rgb(112, 31, 187));
+  --color-pink: rgb(247, 131, 241);
+}/*# sourceMappingURL=main.css.map */
