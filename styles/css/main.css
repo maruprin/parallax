@@ -121,9 +121,11 @@ h3 {
 .up {
   width: 100%;
   opacity: 0.3;
+  transition: transform 1.5s ease-in-out;
 }
 .up:hover {
   opacity: 0.5;
+  transform: rotate(360deg);
 }
 
 * {
